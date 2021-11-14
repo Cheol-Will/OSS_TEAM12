@@ -20,7 +20,9 @@ a{
 #Workout {
     height: 700 !important;
 }
-
+.carousel-item .active image{
+    opacity: 0.5;
+}
 /* .container {
     width: 1116;
     height: 700;
