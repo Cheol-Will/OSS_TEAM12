@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <nav class = "nav navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+        <div class = "container">
+            <a href="#" class="navbar-brand">Open Source Software Project Sample</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar nav ms-auto ">
+                    <li class = "nav-item">
+                        <a href = "#Work out" class = "nav-link">Work out</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#Diet" class = "nav-link">Diet</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#News" class = "nav-link">News</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--showcase-->
+    <section id = "Work out" class="bg-dark text-light p-5 p-lg-0 pt-lg-0 text-center-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Newsletter</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Newsletter-->
+    <section id = "Diet" class="bg-primary text-light p-5">
+        <div class = "container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h1>Diet</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boxes -->
+    <section id = "News" class="p-5">
+        <div class="container">
+            <!-- 1400kcal Diet -->
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="diet-title" onclick="diet_open()" >
+                        1400kcal Diet (Usual)
+                    </div>
+                    <div class="diet-container" id="1400" style="background-color: #aee0ff;">
+                        
+                        <div class="card-title" style="text-align: left; font-size:x-large; margin-left: 10px;">
+                            아침
+                        </div>
+                        <div class="container" style="justify-content:center; display:flex">
+                            <figure>
+                                <img src="image/bread.jpg" width=70%; class="rounded-circle">
+                                <figcaption>
+                                    식빵 2장 (95kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/milk.jpg" width=25%; class="rounded-circle">
+                                <figcaption>
+                                    저지방우유 200ml<br>(80kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/egg.jpg" width=70%; class="rounded-circle">
+                                <figcaption>
+                                    달걀 1개 (100kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/salad.jpg" width=75%; class="rounded-circle">
+                                <figcaption>
+                                    양배추샐러드 (70kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/grapefruit.jpg" width=75%; class="rounded-circle">
+                                <figcaption>
+                                    자몽 1개 (100kcal)
+                                </figcaption>
+                            </figure>
+                            
+                        </div>
+                        <br>
+                        <div class="card-title" style="text-align: left; font-size:x-large; margin-left: 10px; margin-top: 10px;">
+                            점심
+                        </div>
+
+                        <div class="container" style="justify-content:center; display:flex">
+                            <figure>
+                                <img src="image/multi_rice.jpg" width=50%; class="rounded-circle">
+                                <figcaption>
+                                    잡곡밥 2/3 (200kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/miso_soup.jpg" width=50%; class="rounded-circle">
+                                <figcaption>
+                                    된장국 250g (80kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/grilled_fish.jpg" width=50%; class="rounded-circle">
+                                <figcaption>
+                                    삼치구이 50g (150kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/bean_sprout.jpg" width=50%; class="rounded-circle">
+                                <figcaption>
+                                    콩나물 70g (50kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/kimchi.jpg" width=50%; class="rounded-circle">
+                                <figcaption>
+                                    김치 50g (15kcal)
+                                </figcaption>
+                            </figure>
+                            
+                        </div>
+                        <br>
+                        <div class="card-title" style="text-align: left; font-size:x-large; margin-left: 10px; margin-top: 10px;">
+                            저녁
+                        </div>
+                        <div class="container" style="justify-content:center; display:flex">
+                            <figure>
+                                <img src="image/multi_rice.jpg" width=30%; class="rounded-circle">
+                                <figcaption>
+                                    잡곡밥 2/3 (200kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/seaweed_soup.jpg" width=25%; class="rounded-circle">
+                                <figcaption>
+                                    된장국 250g (80kcal)
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- 1200kcal Diet -->
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="diet-title" style="background-color: #83cfff;" onclick="diet_open2()">
+                        1200kcal Diet (Less)
+                    </div>
+                    <div class="diet-container" id="1200" style="background-color: #83cfff;">
+                        
+                            <div class="card-title" style="text-align: left; font-size:x-large; margin-left: 10px;">
+                                아침
+                            </div>
+                            <div class="container" style="justify-content:center; display:flex">
+                                <figure>
+                                    <img src="image/banana.jpg" width=25%; class="rounded-circle">
+                                    <figcaption>
+                                        바나나 1개 (95kcal)
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="image/milk.jpg" width=10%; class="rounded-circle">
+                                    <figcaption>
+                                        저지방우유 200ml<br>(80kcal)
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="image/sweetpotato.jpg" width=40%; class="rounded-circle">
+                                    <figcaption>
+                                        고구마 1개 (115kcal)
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <br>
+                            <div class="card-title" style="text-align: left; font-size:x-large; margin-left: 10px; margin-top: 10px;">
+                                점심
+                            </div>
+
+                            <div class="container" style="justify-content:center; display:flex">
+                                <figure>
+                                    <img src="image/baekban.jpg" width=30%; class="rounded-circle">
+                                    <figcaption>
+                                        백반 2/3 (400kcal)
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="image/sausage.jpg" width=30%; class="rounded-circle">
+                                    <figcaption>
+                                        닭가슴살 소시지<br>한 팩 120g (150kcal)
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <br>
+                            <div class="card-title" style="text-align: left; font-size:x-large; margin-left: 10px; margin-top: 10px;">
+                                저녁
+                            </div>
+
+                            <div class="container" style="justify-content:center; display:flex">
+                                <figure>
+                                    <img src="image/salad.jpg" width=30%; class="rounded-circle">
+                                    <figcaption>
+                                        닭가슴살(120g) 샐러드 (360kcal)
+                                    </figcaption>
+                                </figure>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                <!-- 900kcal Diet -->
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="diet-title" style="background-color: #39b3ff;" onclick="diet_open3()">
+                        900kcal Diet (Least)
+                    </div>
+                    <div class="diet-container" id="900" style="background-color: #39b3ff;">
+                        
+                        <div class="card-title" style="text-align: left; font-size:x-large; margin-left: 10px;">
+                            아침
+                        </div>
+                        <div class="container" style="justify-content:center; display:flex">
+                            <figure>
+                                <img src="image/apple.jpg" width=35%; class="rounded-circle">
+                                <figcaption>
+                                    사과 1개 (64kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/milk.jpg" width=10%; class="rounded-circle">
+                                <figcaption>
+                                    저지방우유 200ml<br>(80kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/pumpkin.jpg" width=40%; class="rounded-circle">
+                                <figcaption>
+                                    단호박 1개 (46kcal)
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <br>
+                        <div class="card-title" style="text-align: left; font-size:x-large; margin-left: 10px; margin-top: 10px;">
+                            점심
+                        </div>
+
+                        <div class="container" style="justify-content:center; display:flex">
+                            <figure>
+                                <img src="image/baekban.jpg" width=30%; class="rounded-circle">
+                                <figcaption>
+                                    백반 1/2 (300kcal)
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="image/chicken_breast.jpg" width=30%; class="rounded-circle">
+                                <figcaption>
+                                    닭가슴살 1팩 (150kcal)
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <br>
+                        <div class="card-title" style="text-align: left; font-size:x-large; margin-left: 10px; margin-top: 10px;">
+                            저녁
+                        </div>
+
+                        <div class="container" style="justify-content:center; display:flex">
+                            <figure>
+                                <img src="image/salad.jpg" width=30%; class="rounded-circle">
+                                <figcaption>
+                                    닭가슴살(100g) 샐러드 (260kcal)
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Learn Section-->
+    <section id = "learn" calss = "p-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="image/dumbell-3435990_1920.jpg" class="img-fluid">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn the Fundamentals</h2>
+                    <p class="lead">I believe we are here on the planet Earth to live, grow up and do what we can to make this world a better place for all people to enjoy freedom. -- Rosa Parks </p>
+                    <p class="lead">I believe we are here on the planet Earth to live, grow up and do what we can to make this world a better place for all people to enjoy freedom. -- Rosa Parks </p>
+                    <a href="#" class="btn btn-dark mt-3">
+                        READ MORE
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id = "learn" class = "p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Learn the Fundamentals</h2>
+                    <p class="lead">I believe we are here on the planet Earth to live, grow up and do what we can to make this world a better place for all people to enjoy freedom. -- Rosa Parks </p>
+                    <p class="lead">I believe we are here on the planet Earth to live, grow up and do what we can to make this world a better place for all people to enjoy freedom. -- Rosa Parks </p>
+                    <a href="#" class="btn btn-dark mt-3">
+                        READ MORE
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="image/man-2264825_1920.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card -->
+    <section id="instructors" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Card Section</h2>
+            <p class="lead text-center text-white mb-5">
+                This is a Card Section   
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg" class = "rounded-circle mb-3">
+                            <h3 class = "card-text">John Doe</h3>
+                            
+                            <p class="card-text">You are the sum total of everything you've ever seen, heard, eaten, smelled, been told, forgot --  it's all there. <br>Everything influences each of us, and because of that I try to make sure that my experiences are positive. <br><br>-- Maya Angelou</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" class = "rounded-circle mb-3">
+                            <h3 class = "card-text">John Doe</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/13.jpg" class = "rounded-circle mb-3">
+                            <h3 class = "card-text">John Doe</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/30.jpg" class = "rounded-circle mb-3">
+                            <h3 class = "card-text">John Doe</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        
+        /*document.onload=function(){
+            document.getElementsByClassName("diet-container").style.display='none';
+        }*/
+        function diet_open(){
+            var k=document.getElementById("1400").style.display;
+            if(k=='none') {
+                document.getElementById("1400").style.display='block';
+            }
+            else {
+                document.getElementById("1400").style.display='none';
+            }
+        }function diet_open2(){
+            var k=document.getElementById("1200").style.display;
+            if(k=='none') {
+                document.getElementById("1200").style.display='block';
+            }
+            else {
+                document.getElementById("1200").style.display='none';
+            }
+        }function diet_open3(){
+            var k=document.getElementById("900").style.display;
+            if(k=='none') {
+                document.getElementById("900").style.display='block';
+            }
+            else {
+                document.getElementById("900").style.display='none';
+            }
+        }
+
+        window.addEventListener("load", () => {
+			// pixel click
+			document.querySelectorAll(".diet-container").forEach(con => {
+				con.style.display='none';
+                
+            });
+            
+            //if(con.style.display=='none') con.style.display='block';
+            //else con.style.display='none';
+        });
+    </script>
+</body>
+</html>

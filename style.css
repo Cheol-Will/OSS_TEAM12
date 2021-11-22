@@ -1,6 +1,16 @@
 a{
     color: white !important;
 }
+
+.diet-title{
+    font-size: 25px; 
+    text-align: center; 
+    background-color: #aee0ff;
+    height: 110px;
+    padding: 3%;
+    width: 100%;
+}
+
 /* Centered text */
 .imagecontainer {
     position: relative;
@@ -35,3 +45,4 @@ a{
 */
 
 /* Slideshow container */
+
