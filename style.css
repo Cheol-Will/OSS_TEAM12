@@ -1,3 +1,48 @@
 a{
     color: white !important;
 }
+
+.diet-title{
+    font-size: 25px; 
+    text-align: center; 
+    background-color: #aee0ff;
+    height: 110px;
+    padding: 3%;
+    width: 100%;
+}
+
+/* Centered text */
+.imagecontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.carousel-item {
+    height: 43rem;
+    background: #777;
+}
+#Workout {
+    height: 700 !important;
+}
+.carousel-item .active image{
+    opacity: 0.5;
+}
+/* .container {
+    width: 1116;
+    height: 700;
+} */
+/*
+#main {
+    opacity: 0.5!important;
+}
+* {box-sizing:border-box}
+*/
+
+/* Slideshow container */
+
