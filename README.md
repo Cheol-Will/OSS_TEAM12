@@ -29,4 +29,4 @@ python manage.py runserver
 ![image](https://user-images.githubusercontent.com/80010823/143768986-71da4e8a-80e8-49af-98ab-fa5d935079ed.png)  
 
 ## Demo Video Link  
-link
+https://www.youtube.com/watch?v=IYyqYm7WXLU
