@@ -15,11 +15,24 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
+from django.urls import include
 import main.views
 import newsletter.views
+import diet.views
+import workout.views
+
+app_name = "main"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main.views.index, name='index'),
-    path('news/', newsletter.views.newspage, name='newspage'),
+    path('news/', main.views.newspage, name='newspage'),
+    path('diet/', main.views.dietpage, name='dietpage'),
+    path('workout/', main.views.workoutpage, name='workoutpage'),
+    path('user/', include('user.urls')),
 ]
+
+urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_URL)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_URL)

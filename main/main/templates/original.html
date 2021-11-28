@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 관리</title>
+</head>
+<body>
+  	<div class="navbar">
+  	</div>
+    {% block content %} 
+    {% endblock %}
+    {% if request.user.is_authenticated %}
+        <form action="{% url 'user:user_logout' %}" method="POST">
+            {% csrf_token %}
+            <input type="submit" value="Logout">
+        </form>
+    {% else %}
+        <a href="{% url 'user:user_login' %}">로그인</a>
+        <a href="{% url 'user:user_create' %}">회원가입</a>
+    {% endif %}
+</body>
+</html>

@@ -3,5 +3,5 @@ from main import *
 
 # Create your views here.
 
-def newspage(request):
-    return render(request, 'template.html')
+def dietpage(request):
+    return render(request,'diet.html')
