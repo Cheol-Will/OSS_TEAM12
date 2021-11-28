@@ -12,3 +12,12 @@ def dietpage(request):
 
 def newspage(request):
     return render(request, 'template.html')
+
+def routine1(request):
+    return render(request, 'routine1.html')
+def routine2(request):
+    return render(request, 'routine2.html')
+def routine3(request):
+    return render(request, 'routine3.html')
+def routine4(request):
+    return render(request, 'routine4.html')

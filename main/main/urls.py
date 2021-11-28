@@ -32,6 +32,10 @@ urlpatterns = [
     path('diet/', main.views.dietpage, name='dietpage'),
     path('workout/', main.views.workoutpage, name='workoutpage'),
     path('user/', include('user.urls')),
+    path('workout/routine1',main.views.routine1, name='routine1'),
+    path('workout/routine2',main.views.routine2, name='routine2'),
+    path('workout/routine3',main.views.routine3, name='routine3'),
+    path('workout/routine4',main.views.routine4, name='routine4'),
 ]
 
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_URL)
