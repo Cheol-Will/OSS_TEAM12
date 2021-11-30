@@ -14,7 +14,7 @@
 terminal에서 django 설치 후 manage.py가 있는 디렉토리로 이동하고 아래의 코드를 이용해 페이지 실행
 ```
 python -m pip install django
-python manage.py runserve
+python manage.py runserver
 ```   
 
 먼저 메인페이지에 접속하여 회원가입 절차를 진행한다. 상단의 nav bar를 보면 workout, diet, news, 총 세가지의 카테고리가 존재한다.   
