@@ -11,6 +11,7 @@
  
 ## 사용방법:   
 ### visual studio code  
+
 oss_team12 폴더에서 우클릭 -> vscode로 열기  
 ```  
 pip install django
@@ -20,7 +21,13 @@ python manage.py runserver
 
 밑에서 두번째 줄 http://127.0.0.1:8000/ 을 Ctrl+클릭으로 접속하거나 이 주소를 주소창에 입력.  
   
-5번의 주소창이 뜨지 않고 에러가 뜬다면 캡쳐본과 함께 말씀해주시면 감사하겠습니다.  
+=======
+terminal에서 django 설치 후 manage.py가 있는 디렉토리로 이동하고 아래의 코드를 이용해 페이지 실행
+```
+python -m pip install django
+python manage.py runserver
+```   
+
 
 먼저 메인페이지에 접속하여 회원가입 절차를 진행합니다. 상단의 nav bar를 보면 workout, diet, news, 총 세가지의 카테고리를 볼 수 있습니다.   
  
