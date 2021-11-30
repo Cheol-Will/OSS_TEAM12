@@ -7,11 +7,22 @@
     <title>Template</title>
     <link rel = "stylesheet" href = "../static/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        source {
+            width : 500px; 
+            height : 30px;
+            padding : 10px;
+            bold : bold;
+            margin-left : 50px;
+            margin-bottom : 30px;
+            margin-top : -30px;
+        } 
+    </style>
 </head>
 <body>
     <nav class = "nav navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
         <div class = "container">
-            <a href="#" class="navbar-brand">Healthskku</a>
+            <a href=".." class="navbar-brand">Healthskku</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar nav ms-auto ">
                     <li class = "nav-item">
@@ -52,71 +63,136 @@
     <section id = "News" class="p-5">
         <div class="container">
             <div class="row text-center g-4">
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <h3>Pushup</h3>
-                            <img src = "../static/image/man-2264825_1920.jpg" width = 300>
-                            <p class = "card-text ">
-                                pushup
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <h3>Card</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-white text-black">
-                        <div class="card-body text-center">
-                            <h3>Card</h3>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
     <!-- Learn Section-->
     <section id = "learn" calss = "p-5 bg-light">
+        <source>
+            <font size="24px" weight="bolder"> 네이버 뉴스 건강 정보 </font>
+        </source>
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-md">
-                    <img src="../static/image/dumbell-3435990_1920.jpg" class="img-fluid">
-                </div>
-                <div class="col-md p-5">
-                    <h2>Learn the Fundamentals</h2>
-                    <p class="lead">I believe we are here on the planet Earth to live, grow up and do what we can to make this world a better place for all people to enjoy freedom. -- Rosa Parks </p>
-                    <p class="lead">I believe we are here on the planet Earth to live, grow up and do what we can to make this world a better place for all people to enjoy freedom. -- Rosa Parks </p>
-                    <a href="#" class="btn btn-dark mt-3">
-                        READ MORE
-                    </a>
-                </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Num.</th>
+                            <th>제목</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td id="n1"> 
+                                <a href="https://news.naver.com/main/read.naver?mode=LS2D&mid=shm&sid1=103&sid2=241&oid=296&aid=0000052952" text-color="black" style="color:none;" >
+                                    <font color="black">
+                                        집밥만 해먹는데 살은 안 빠지는 이유
+                                    </font>
+                                </a> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="n2"> 
+                                <a href="https://news.naver.com/main/read.naver?mode=LS2D&mid=shm&sid1=103&sid2=241&oid=346&aid=0000046291" text-color="black" style="color:none;" >
+                                    <font color="black">
+                                        골다공증 환자, 칼슘제 효과 높이려면?
+                                    </font>
+                                </a> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="n3"> 
+                                <a href="https://news.naver.com/main/read.naver?mode=LS2D&mid=shm&sid1=103&sid2=241&oid=296&aid=0000052951" text-color="black" style="color:none;" >
+                                    <font color="black">
+                                        파프리카, 색깔별로 영양 다르다?
+                                    </font>
+                                </a> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td id="n4"> 
+                                <a href="https://news.naver.com/main/read.naver?mode=LS2D&mid=shm&sid1=103&sid2=241&oid=296&aid=0000052958" text-color="black" style="color:none;" >
+                                    <font color="black">
+                                        가장 큰 부정맥 유발 요인은 '이것' (연구)
+                                    </font>
+                                </a> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td id="n5"> 
+                                <a href="https://news.naver.com/main/read.naver?mode=LS2D&mid=shm&sid1=103&sid2=241&oid=469&aid=0000643982" text-color="black" style="color:none;" >
+                                    <font color="black">
+                                        "3050 허리가 위태롭다"…허리 디스크 환자 53%가 30~50대
+                                    </font>
+                                </a> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td id="n6"> 
+                                <a href="https://news.naver.com/main/read.naver?mode=LS2D&mid=shm&sid1=103&sid2=241&oid=469&aid=0000643977" text-color="black" style="color:none;" >
+                                    <font color="black">
+                                        스마트폰 달고 사는 당신, '거북목증후군' 됩니다
+                                    </font>
+                                </a> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td id="n7"> 
+                                <a href="https://news.naver.com/main/read.naver?mode=LS2D&mid=shm&sid1=103&sid2=241&oid=346&aid=0000046285" text-color="black" style="color:none;" >
+                                    <font color="black">
+                                        미세먼지 심한 날, 눈 세척 방법은?
+                                    </font>
+                                </a> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td id="n8"> 
+                                <a href="https://news.naver.com/main/read.naver?mode=LS2D&mid=shm&sid1=103&sid2=241&oid=346&aid=0000046292" text-color="black" style="color:none;" >
+                                    <font color="black">
+                                        "오전 7시 이전 식사, 장수에 도움"
+                                    </font>
+                                </a> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td id="n9"> 
+                                <a href="https://news.naver.com/main/read.naver?mode=LS2D&mid=shm&sid1=103&sid2=241&oid=346&aid=0000046294" text-color="black" style="color:none;" >
+                                    <font color="black">
+                                        일기 쓰기, ‘좌뇌’ 자극에 도움… ‘우뇌’에는?
+                                    </font>
+                                </a> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td id="n10"> 
+                                <a href="https://news.naver.com/main/read.naver?mode=LS2D&mid=shm&sid1=103&sid2=241&oid=346&aid=0000046295" text-color="black" style="color:none;" >
+                                    <font color="black">
+                                        하루 물 2L 마셔야 한다? 진실 or 거짓
+                                    </font>
+                                </a> 
+                            </td>
+                        </tr>
+                        
+
+                    </tbody>
+                </table>
+
             </div>
         </div>
 
     </section>
 
-    <section id = "learn" class = "p-5 bg-dark text-light">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md p-5">
-                    <h2>Learn the Fundamentals</h2>
-                    <p class="lead">I believe we are here on the planet Earth to live, grow up and do what we can to make this world a better place for all people to enjoy freedom. -- Rosa Parks </p>
-                    <p class="lead">I believe we are here on the planet Earth to live, grow up and do what we can to make this world a better place for all people to enjoy freedom. -- Rosa Parks </p>
-                    <a href="#" class="btn btn-dark mt-3">
-                        READ MORE
-                    </a>
-                </div>
-                <div class="col-md">
-                    <img src="../static/image/man-2264825_1920.jpg" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-dark text-muted">
